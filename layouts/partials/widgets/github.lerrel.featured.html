@@ -3,11 +3,15 @@
 {{ $content := $page.Params.content }}
 
 <!-- Featured widget -->
-<h3>{{ "{{$page.Params.title}}" | markdownify | emojify }}</h3>
+<center>
+  <h3>{{$page.Params.title}} | markdownify | emojify }}</h3>
+</center>
+
+<h3>{{ "{{$page.Params.content.project1.src}}" | markdownify | emojify }}</h3>
 <h3>{{ "$page.Params.title"}}</h3>
 <div class="row">
   <div class="col-12 col-lg-4">
-    <img class="centered-and-cropped"  src="{{$content.project1.src}}" height='150' alt="GIF" />
+    <img class="centered-and-cropped"  src={{$content.project1.src}} height='150' alt="GIF" />
       <p>
           <center>
               <a href="{{$content.project1.arxiv}}"> "{{$content.project1.name}}" </a>
