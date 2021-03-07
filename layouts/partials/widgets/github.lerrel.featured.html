@@ -1,29 +1,29 @@
 {{ $ := .root }}
 {{ $page := .page }}
-
+{{ $content := $st.Params.content }}
 <!-- Featured widget -->
 <div class="row">
   <div class="col-12 col-lg-4">
-    <img class="centered-and-cropped"  src="https://thumbs.gfycat.com/CrazyImpressionableIsopod-size_restricted.gif" height='150' alt="GIF" />
+    <img class="centered-and-cropped"  src="{{$content.project1.src}}" height='150' alt="GIF" />
       <p>
           <center>
-              <a href="http://arxiv.org/abs/1509.06825"><h4>Learning to Grasp</h4></a>
+              <a href="{{$content.project1.arxiv}}"> "{{$content.project1.name}}" </a>
           </center>
       </p>
   </div>
   <div class="col-12 col-lg-4">
-    <img class="centered-and-cropped"  src="https://thumbs.gfycat.com/CrazyImpressionableIsopod-size_restricted.gif" height='150' alt="GIF" />
+    <img class="centered-and-cropped"  src="{{$content.project2.src}}" height='150' alt="GIF" />
       <p>
           <center>
-              <a href="http://arxiv.org/abs/1509.06825"><h4>Learning to Grasp</h4></a>
+              <a href="{{$content.project2.arxiv}}"> "{{$content.project2.name}}" </a>
           </center>
       </p>
   </div>
   <div class="col-12 col-lg-4">
-    <img class="centered-and-cropped"  src="https://thumbs.gfycat.com/CrazyImpressionableIsopod-size_restricted.gif" height='150' alt="GIF" />
+    <img class="centered-and-cropped"  src="{{$content.project3.src}}" height='150' alt="GIF" />
       <p>
           <center>
-              <a href="http://arxiv.org/abs/1509.06825"><h4>Learning to Grasp</h4></a>
+              <a href="{{$content.project3.arxiv}}"> "{{$content.project3.name}}" </a>
           </center>
       </p>
   </div>
@@ -31,26 +31,26 @@
 
 <div class="row">
   <div class="col-12 col-lg-4">
-    <img class="centered-and-cropped"  src="https://thumbs.gfycat.com/CrazyImpressionableIsopod-size_restricted.gif" height='150' alt="GIF" />
+    <img class="centered-and-cropped"  src="{{$content.project4.src}}" height='150' alt="GIF" />
       <p>
           <center>
-              <a href="http://arxiv.org/abs/1509.06825"><h4>Learning to Grasp</h4></a>
+              <a href="{{$content.project4.arxiv}}"> "{{$content.project4.name}}" </a>
           </center>
       </p>
   </div>
   <div class="col-12 col-lg-4">
-    <img class="centered-and-cropped"  src="https://thumbs.gfycat.com/CrazyImpressionableIsopod-size_restricted.gif" height='150' alt="GIF" />
+    <img class="centered-and-cropped"  src="{{$content.project5.src}}" height='150' alt="GIF" />
       <p>
           <center>
-              <a href="http://arxiv.org/abs/1509.06825"><h4>Learning to Grasp</h4></a>
+              <a href="{{$content.project5.arxiv}}"> "{{$content.project5.name}}" </a>
           </center>
       </p>
   </div>
   <div class="col-12 col-lg-4">
-    <img class="centered-and-cropped"  src="https://thumbs.gfycat.com/CrazyImpressionableIsopod-size_restricted.gif" height='150' alt="GIF" />
+    <img class="centered-and-cropped"  src="{{$content.project6.src}}" height='150' alt="GIF" />
       <p>
           <center>
-              <a href="http://arxiv.org/abs/1509.06825"><h4>Learning to Grasp</h4></a>
+              <a href="{{$content.project6.arxiv}}"> "{{$content.project6.name}}" </a>
           </center>
       </p>
   </div>
