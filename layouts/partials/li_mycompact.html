@@ -28,17 +28,11 @@
   {{ $summary = $item.Summary }}
 {{ end }}
 
-<div class="media stream-item">
-  <div class="ml-3">
-<!--     {{ $resource := ($item.Resources.ByType "image").GetMatch "*featured*" }}
-    {{ with $resource }}
-    {{ $filters := slice (images.GaussianBlur 21) (images.Pixelate 8) }}
-    {{ $image := .Resize "150x" }}
-    {{ $image_lq := (.Resize "150x q1").Filter $filters }} -->
+<div class="row">
+  <div class="col-12 col-lg-4">
     <a href="{{$item.Params.arxiv}}" {{ $target | safeHTMLAttr }}>
       <img src="{{ $item.Params.image.link }}" alt="{{ $item.Title }}" class="lazyload" width="200px" alt="GIF">
     </a>
-<!--     {{end}} -->
   </div>
   <div class="media-body">
 
