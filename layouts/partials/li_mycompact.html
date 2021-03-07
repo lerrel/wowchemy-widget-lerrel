@@ -32,11 +32,12 @@
   <div class="col-12 col-lg-4">
     <br>
     <a href="{{$item.Params.arxiv}}" {{ $target | safeHTMLAttr }}>
-      <img src="{{ $item.Params.image.link }}" alt="{{ $item.Title }}" class="lazyload" width="200px" alt="GIF">
+      <img src="{{ $item.Params.image.link }}" alt="{{ $item.Title }}" class="lazyload" width="200px" margin_top="10px" margin-top="10px" margintop="10px" alt="GIF">
     </a>
   </div>
+  <div class="col-12 col-lg-1">
+  </div>
   <div class="media-body">
-
     <div class="section-subheading article-title mb-0 mt-0">
       <a href="{{$item.Params.arxiv}}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
     </div>
@@ -70,7 +71,7 @@
       {{ else if not $show_authors_only }}
         {{ partial "page_metadata" (dict "page" $item "is_list" 1) }}
       {{ end }}
-      <div>
+      <div class="article-style">
         {{ $item.Params.publication_short }}
         {{ if $item.Params.special_comment }}
           ({{ $item.Params.special_comment }})
