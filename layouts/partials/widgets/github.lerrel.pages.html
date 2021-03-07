@@ -71,11 +71,7 @@
 
 {{ $columns := $st.Params.design.columns | default "2" }}
 
-<div class="col-12 col-lg-1">
-  <br>
-</div>
-
-<div class="col-12 {{if eq $columns "2"}}col-lg-11{{end}}">
+<div class="col-12 {{if eq $columns "2"}}col-lg-12{{end}}">
 
   {{ with $st.Content }}{{ . }}{{ end }}
 
