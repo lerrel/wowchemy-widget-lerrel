@@ -76,9 +76,9 @@
         {{ partial "page_metadata" (dict "page" $item "is_list" 1) }}
       {{ end }}
       <div>
-        {{ $item.publication_short }}
-        {{ if $item.special_comment }}
-          ({{ $item.special_comment }})
+        {{ $item.Params.publication_short }}
+        {{ if $item.Params.special_comment }}
+          ({{ $item.Params.special_comment }})
         {{ end }}
       </div>
     </div>
