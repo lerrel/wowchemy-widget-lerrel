@@ -29,13 +29,10 @@
 {{ end }}
 
 <div class="row">
-  <div class="col-12 col-lg-4">
-    <br>
+  <div class="col-12 col-lg-2">
     <a href="{{$item.Params.arxiv}}" {{ $target | safeHTMLAttr }}>
-      <img src="{{ $item.Params.image.link }}" alt="{{ $item.Title }}" class="lazyload" width="200px" margin_top="10px" margin-top="10px" margintop="10px" alt="GIF">
+      <img src="{{ $item.Params.image.link }}" alt="{{ $item.Title }}" class="lazyload" width="200px" margin_top="20px" alt="GIF">
     </a>
-  </div>
-  <div class="col-12 col-lg-1">
   </div>
   <div class="media-body">
     <div class="section-subheading article-title mb-0 mt-0">
