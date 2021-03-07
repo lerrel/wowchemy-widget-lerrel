@@ -36,7 +36,7 @@
     {{ $image := .Resize "150x" }}
     {{ $image_lq := (.Resize "150x q1").Filter $filters }} -->
     <a href="{{$item.Params.arxiv}}" {{ $target | safeHTMLAttr }}>
-      <img src="{{ $item.image.link }}" alt="{{ $item.Title }}" class="lazyload" width="200px" alt="GIF">
+      <img src="{{ $item.Params.image.link }}" alt="{{ $item.Title }}" class="lazyload" width="200px" alt="GIF">
     </a>
 <!--     {{end}} -->
   </div>
